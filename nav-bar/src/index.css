@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+}
+
+nav{
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+.nav-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem;
+}
+.nav-toggle{
+  color: skyblue;
+  font-size: 1.5rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.nav-toggle:hover{
+  color:rgb(162, 162, 233);
+  transform: rotate(90deg);
+}
+.logo{
+  height: 40px;
+}
+.links a{
+  color:gray;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition:  all 0.3s linear;
+  
+}
+.links a:hover{
+  color: skyblue;
+  padding-left: 1.5rem;
+
+}
+.social-icons{
+  display: none;
+}
+.links-container{
+  height:0;
+  overflow: hidden;
+}
+.show-container{
+  height: 12rem;
+}
+@media screen and (min-width:800px){
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: skyblue;
+  
+  }
+  .social-icons a:hover {
+    color:rgb(199, 229, 241) ;
+  }
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
